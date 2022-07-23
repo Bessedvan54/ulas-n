@@ -1,0 +1,345 @@
+* {
+    
+    box-sizing: border-box;
+    
+    
+}
+
+.contact{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .contactFrom{
+    position: relative;
+    width: 700px;
+    margin-top: 20px;
+}
+
+.contact .contactFrom .row{
+    width: 100%;
+    display: flex;
+}
+.contact .contactFrom .row .col50{
+    width: 50%;
+    margin: 10px;
+}
+.contact .contactFrom .row .col100{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.contact .contactFrom .row input,
+.contact .contactFrom .row textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+.contact .contactFrom .row textarea{
+    height: 100px;
+}
+.contact .contactFrom .row input[type="submit"]{
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+.title.white h2,
+.title.white p
+{
+    color:#fff;
+}
+.title.white h2::before{
+    background: #fff;
+}
+.title{
+    width: 100%;
+    text-align: center;
+}
+.title h2{position: relative; color: #00bcd4;
+font-size: 1.8em;
+font-weight: 700;
+letter-spacing: 1px;
+}
+.title p{
+    max-width: 700px;
+    display: inline-block;
+
+}
+.title h2::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background:#000 ;
+}
+.contact .contactFrom .row{
+    width: 100%;
+    display: flex;
+}
+.contact .contactFrom .row .col50{
+    width: 50%;
+    margin: 10px;
+}
+.contact .contactFrom .row .col100{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.contact .contactFrom .row input,
+.contact .contactFrom .row textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+.contact .contactFrom .row textarea{
+    height: 100px;
+}
+.contact .contactFrom .row input[type="submit"]{
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+@media (max-width: 991px)
+{
+   .banner .imgSidebar{
+       display: none;
+   }
+   .banner .contentBx, .sidebar{
+       width: 100%;
+       padding: 40px;
+   }
+ .logoText{
+   left: 40px;
+ }
+ .toggle{
+   right: 40px;
+ }
+ .sci{
+   left: 40px;
+ }
+ section{
+   padding: 40px;
+ }
+ .about .content{
+   flex-direction: column;
+ }
+ .about .content .textBx{
+   min-width: 100%;
+   width: 100%;
+ }
+ .about .content{
+   margin-top: 0;
+ }
+ 
+ .about .content .imgBx{
+   margin-left: 0;
+ }
+
+ .services .content .servicesBx{
+   padding: 30px 20px;
+   max-width: 340px;
+   margin: 10px;
+ }
+
+ .contact .contactFrom{
+   width: 100%;
+ }
+ .contactFrom .row{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+ .contact .contactFrom .row .col50{
+   width: 100%;
+   margin: 10px;
+ }
+ .sidebar ul li a {
+   font-size: 1.5em;
+ }
+
+}
+
+@media (max-width: 500)
+{
+   .services .content .servicesBx,
+   .work .content .workBx{
+       padding: 30px 20px;
+       max-width: 100%;
+       width: 100%;
+       margin: 10px 0;
+   }
+}
+
+
+
+
+
+ 
+#slider {
+   margin: 22%;
+   margin-left: 25%;
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+  
+   overflow: hidden;
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+ }
+ #slider ul {
+   position: relative;
+   list-style: none;
+   height: 100%;
+   width: 10000%;
+   padding: 0;
+   margin: 0;
+   transition: all 750ms ease;
+   left: 0;
+ }
+ #slider ul li {
+   position: relative;
+   height: 100%;
+  
+   float: left;
+ }
+ #slider ul li img{
+   width: 800px;
+   height: 465px;
+ }
+  
+ #slider #prev, #slider #next {
+   width: 50px;
+   line-height: 50px;
+   border-radius: 50%;
+   font-size: 2rem;
+   text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+   text-align: center;
+   color: white;
+   text-decoration: none;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   transition: all 150ms ease;
+ }
+ #slider #prev:hover, #slider #next:hover {
+   background-color: rgba(0, 0, 0, 0.5);
+   text-shadow: 0;
+ }
+ #slider #prev {
+   left: 10px;
+ }
+ #slider #next {
+   right: 10px;
+ }
+
+section .heading{
+   display: inline-block;
+   position: relative;
+   color: #3b7cf5;
+   font-size: 4vw;
+   padding: 60px;
+   width: 100%;
+   text-align: center;
+   font-weight: 800;
+}
+section .heading b{
+   color: #fff;
+}
+
+.wrapper{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.wrapper .container{
+   position: relative;
+   width: 350px;
+   color:rgb(0, 0, 0);
+   margin: 40px 10px;
+   padding: 70px 20px;
+   border-radius: 3px;
+   transition: 0.3s ease;
+   background: #333;
+}
+.wrapper .container .profile{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: -10%;
+   width: 100%;
+   display: block;
+}
+
+.wrapper .container .profile .imgBox{
+   position: relative;
+   height: 100px;
+   width: 100px;
+   margin: auto;
+   border: 8px solid #070c0d;
+   border-radius: 50%;
+   
+}
+.wrapper .container .profile .imgBox img{
+   position: absolute; height:  100%;
+   width: 100%;
+   top: 0; left: 0;
+   border-radius: 50% ;
+   object-fit: cover;
+   transition: 0.3s ease;
+   
+}
+.wrapper .container .profile h2{
+   padding: 5px 0;
+   text-transform: capitalize;
+   color: rgb(0, 0, 0);
+   letter-spacing: 1px;
+   text-align: center;
+
+}
+.wrapper .container p{ margin-top: 50px;
+   color: rgb(0, 0, 0);
+   padding: 0 8px;
+   font-size: 15px;
+   opacity: 0.8;
+
+}
+.wrapper .container .left{
+   font-size: 30px;
+   display: block;
+   text-align: left;
+   color: #3b7cf5;
+}
+.wrapper .container .right{
+   font-size: 30px;
+   display: block;
+   text-align: left;
+   color: #3b7cf5;
+}
